@@ -4,7 +4,7 @@ const app = express();
 const fs = require('fs');
 const bodyParser = require('body-parser');
 const request = require('request');
-const port = '3000';
+const port = process.env.PORT || 3000;
 
 //telling server where to look for files
 // const pathJoin = path.join(__dirname + '../public');
